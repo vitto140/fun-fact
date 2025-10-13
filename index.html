@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Fun facts</title>
+</head>
+<body>
+    <div class="container" role="main">
+        <header>
+            <div class="logo" aria-hidden="true">
+                <div class="mark">✨</div>
+                <div>
+                    <h1>Fun Facts</h1>
+                    <p class="lead">Short, shareable bursts of curiosity.</p>
+                </div>
+            </div>
+
+
+            <div class="controls" role="search">
+                <input id="search" class="search" placeholder="Search facts (e.g. space, animals)"
+                    aria-label="Search facts" />
+                <button id="surprise" class="btn" title="Show a random fact">Surprise me</button>
+            </div>
+        </header>
+
+
+        <section class="spotlight" aria-live="polite">
+            <div class="big" id="spot-title">Welcome!</div>
+            <div class="meta">Click "Surprise me" or pick a card below.</div>
+        </section>
+
+
+        <section class="grid" id="cards">
+            <!-- Cards inserted by script for easier maintenance -->
+        </section>
+
+
+        <p style="margin-top:18px;color:var(--muted);font-size:13px">Tip: hover a card for a tiny lift effect. This page
+            is intentionally a single file — easy to save or share.</p>
+    </div>
+    <div class="dots" aria-hidden="true">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</body>
+</html>
